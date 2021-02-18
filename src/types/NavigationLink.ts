@@ -1,4 +1,4 @@
-export default interface NavigationLink {
-  text: string,
-  to: string,
-};
+export interface NavigationLink {
+  text: string;
+  to: string;
+}

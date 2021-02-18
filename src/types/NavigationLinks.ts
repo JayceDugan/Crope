@@ -1,3 +1,3 @@
-import { NavigationLink } from "@/types/index";
+import { NavigationLink } from './NavigationLink';
 
-export default interface NavigationLinks extends Array<NavigationLink>{};
+export type NavigationLinks = Array<NavigationLink>;

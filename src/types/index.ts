@@ -1,2 +1,2 @@
-export { default as NavigationLink } from "./NavigationLink";
-export { default as NavigationLinks } from "./NavigationLinks";
+export { NavigationLink } from './NavigationLink';
+export { NavigationLinks } from './NavigationLinks';
