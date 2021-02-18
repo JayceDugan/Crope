@@ -1,0 +1,34 @@
+[
+  {
+    "text": "About Us",
+    "to": "/about-us"
+  },
+  {
+    "text": "Services",
+    "to": "/services"
+  },
+  {
+    "text": "Service Detail",
+    "to": "/service-detail"
+  },
+  {
+    "text": "Cases",
+    "to": "/cases"
+  },
+  {
+    "text": "Case Work",
+    "to": "/cases/1"
+  },
+  {
+    "text": "Blog",
+    "to": "/blog"
+  },
+  {
+    "text": "Post",
+    "to": "/blog/1"
+  },
+  {
+    "text": "404",
+    "to": "/not-found"
+  }
+]
