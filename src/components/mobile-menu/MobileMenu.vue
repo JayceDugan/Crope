@@ -3,15 +3,20 @@
     data-cy="mobile-menu"
     class="mobile-menu"
   >
-    <button
-      class="button button--reset button--close"
-    >
+    <button class="button button--reset button--close">
       <div class="line"></div>
       <div class="line"></div>
     </button>
 
-    <section class="mobile-menu__navigation">
-      <navigation :links="links" />
+    <mobile-menu-navigation />
+
+    <section class="mobile-menu__search">
+      <text-input
+        icon="search"
+        displayLabel="false"
+        placeholder="Search"
+        iconAlignment="right"
+      />
     </section>
   </section>
 </template>
@@ -19,6 +24,12 @@
 <script src="./MobileMenu.ts"></script>
 
 <style lang="scss" scoped>
+@mixin not-last {
+  &:not(:last-of-type) {
+    @content;
+  }
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -57,6 +68,31 @@
     }
   }
 
-  &__navigation {}
+  &__navigation {
+    width: 100%;
+
+    ::v-deep .nav {
+      &__list {
+        padding: 0;
+        margin: 0;
+      }
+
+      &__item {
+        text-align: center;
+
+        @include not-last() {
+          margin-bottom: 24px;
+        }
+      }
+
+      &-list__link {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: 500;
+        line-height: 130%;
+        color: #A9AFC3;
+      }
+    }
+  }
 }
 </style>

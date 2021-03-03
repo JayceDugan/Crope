@@ -1,19 +1,9 @@
 import { Vue, Component } from 'vue-property-decorator';
-import { NavigationLinks } from '@/types';
-import Navigation from '@/components/navigation/Navigation.vue';
-import MobileMenuLinks from '@/json/MobileMenuLinks.json';
+import MobileMenuNavigation from './MobileMenuNavigation.vue';
 
 @Component({
   components: {
-    Navigation,
+    MobileMenuNavigation,
   },
 })
-export default class MobileMenu extends Vue {
-  links: NavigationLinks;
-
-  constructor() {
-    super();
-
-    this.links = MobileMenuLinks;
-  }
-}
+export default class MobileMenu extends Vue {}
