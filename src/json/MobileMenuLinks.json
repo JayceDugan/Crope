@@ -1,5 +1,9 @@
 [
   {
+    "text": "Home",
+    "to": "/"
+  },
+  {
     "text": "About Us",
     "to": "/about-us"
   },
